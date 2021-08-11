@@ -25,3 +25,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/home', function () {
     return view('index');
 });
+
+
+Route::get('/login', function () {
+    return view('login');
+});
